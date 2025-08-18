@@ -1765,7 +1765,9 @@ function buildingStats(recalculate) {
         FrozenCookies.farmLimit &&
         Game.Objects["Farm"].amount >= FrozenCookies.farmMax
       ) {
-        buildingBlacklist.push(2);
+        buildingBlacklist.push(2); //Farms
+        buildingBlacklist.push(3); //Mines
+        buildingBlacklist.push(4); //Factory
       }
       FrozenCookies.caches.buildings = Game.ObjectsById.map(function (
         current,
